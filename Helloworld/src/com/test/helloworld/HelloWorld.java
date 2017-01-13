@@ -6,7 +6,7 @@ public class HelloWorld {
 	
 	
 	public static void type_a() {
-		
+	
 		int score = 0;
 		System.out.println("남자A 탐색을 시작합니다. \n\n");
 		
