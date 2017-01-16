@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Quiz2 {
 public static void main(String []args){
 	
-	String choice="¹Ýº¹";
+	String choice="ë°˜ë³µ";
 	
-	while(choice.equals("¹Ýº¹")){
+	while(choice.equals("ï¿½ë°˜ë³µ")){
 	
-	System.out.print("¼ýÀÚÀÔ·Â : ");
+	System.out.print("ìˆ«ìž ìž…ë ¥> ");
 	
 	Scanner input = new Scanner(System.in);
 	
@@ -46,7 +46,7 @@ public static void main(String []args){
 			System.out.println("*");
 			break;
 		}
-		System.out.print("¹Ýº¹, Á¾·á ÀÔ·Â > ");
+		System.out.print("ë°˜ë³µ, ì¢…ë£Œ ì„ íƒ > ");
 		Scanner n = new Scanner(System.in);
 		choice = n.next();
 	}
