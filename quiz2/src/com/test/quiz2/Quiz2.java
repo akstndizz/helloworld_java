@@ -7,7 +7,7 @@ public static void main(String []args){
 	
 	String choice="반복";
 	
-	while(choice.equals("�반복")){
+	while(choice.equals("반복")){
 	
 	System.out.print("숫자 입력> ");
 	
