@@ -4,8 +4,12 @@ import java.util.Scanner;
 
 public class Quiz2 {
 public static void main(String []args){
-	 
-	System.out.println("숫자입력 : ");
+	
+	String choice="반복";
+	
+	while(choice.equals("반복")){
+	
+	System.out.print("숫자입력 : ");
 	
 	Scanner input = new Scanner(System.in);
 	
@@ -35,13 +39,16 @@ public static void main(String []args){
 			System.out.println("    *");
 			break;
 		case 4 :
-			
 			System.out.println("*****");
 			System.out.println("****");
 			System.out.println("***");
 			System.out.println("**");
 			System.out.println("*");
 			break;
+		}
+		System.out.print("반복, 종료 입력 > ");
+		Scanner n = new Scanner(System.in);
+		choice = n.next();
 	}
 	}
 }
