@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Quiz2 {
 public static void main(String []args){
-	
+	 
 	System.out.println("숫자입력 : ");
 	
 	Scanner input = new Scanner(System.in);
