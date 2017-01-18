@@ -2,13 +2,34 @@ package com.test.quiz3;
 
 public class AnimalExam {
 	public static void main(String []args){
+		//170118 12ì‹œ ìˆ˜ì—…
+		Animal monkey1=new Animal();
+		monkey1.feed=1;
+		monkey1.strength=monkey1.weight=310;
+		monkey1.skin=1;
+		monkey1.speed=65;
+		monkey1.life=26; monkey1.age=2;
+		
+		Animal monkey2=new Monkey(2);
+		System.out.println(monkey1.eat(monkey2));
+		System.out.println(monkey2.strength);
+		System.out.println(monkey2.eat(monkey1));
+		System.out.println(monkey1.strength);
+		System.out.println("-----------------------");
+
+		System.out.println(monkey2.eat(monkey1));
+		System.out.println(monkey1.strength);
+		System.out.println(monkey1.eat(monkey2));
+		System.out.println(monkey2.strength);
+		System.out.println("-----------------------");
+		///////////////////////////////////////
 		Animal monkey=new Animal();
 		Animal tiger=new Animal();
 		monkey.feed=2; tiger.feed=1;
 		
 		Plant carret=new Plant();
 		
-		//È£¶ûÀÌ¶ó ¿ø¼şÀÌ¸¦ ¸ÔÀ»¶§, ¿ø¼şÀÌ°¡ È£¶ûÀÌ¸¦ ¸ÔÀ»¶§ °¡´É¼º ºñ±³
+
 		System.out.println(tiger.eat(monkey));
 		System.out.println(monkey.eat(tiger));
 		System.out.println(tiger.eat(carret));

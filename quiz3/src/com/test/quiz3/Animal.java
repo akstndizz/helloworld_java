@@ -1,30 +1,19 @@
 package com.test.quiz3;
 
 public class Animal {
-	//몸길이
-	//몸무게
-	//이동속도
-	//나이
-	//수명
-	//표면
-	//날개쌍
-	//다리갯수
-	
-	//숨쉬는방법
-	//서식지
-	//뿔
-	int length;
-	int weight;
-	int speed;
-	int age;
-	int life;
+
+	int length;//몸길이
+	int weight;//몸무게
+	int speed;//이동속도
+	int age;//나이
+	int life;//수명
 	int skin;//표면(1=털, 2=깃털, 3=딱딱, 4=미끈)
-	int legs;
-	int wings;
+	int legs;//다리갯수
+	int wings;//날개쌍
 	int feed;//먹이(1=동물, 2=식물 , 3=잡식)
-	int breathe;
-	int habitat;
-	int horns;
+	int breathe;//숨쉬는방법(1=허파, 2=아가미)
+	int habitat;//서식지(1=육지, 2=바다,3=둘다)
+	int horns;//뿔
 	int strength;//체력
 	boolean alive;
 	String action;
