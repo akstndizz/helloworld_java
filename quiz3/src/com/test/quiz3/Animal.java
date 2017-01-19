@@ -1,5 +1,5 @@
 package com.test.quiz3;
-
+//170119
 public class Animal {
 
 	int length;//몸길이
@@ -12,7 +12,7 @@ public class Animal {
 	int wings;//날개쌍
 	int feed;//먹이(1=동물, 2=식물 , 3=잡식)
 	int breathe;//숨쉬는방법(1=허파, 2=아가미)
-	int habitat;//서식지(1=육지, 2=바다,3=둘다)
+	//int habitat;  //서식지(1=육지, 2=바다,3=둘다)
 	int horns;//뿔
 	int strength;//체력
 	boolean alive;
@@ -22,8 +22,13 @@ public class Animal {
 		length=0; weight=0; speed=0; age=0; life=0; skin=0; legs=0;
 		wings=0; feed=0; breathe=0; habitat=0; horns=0; alive=true;
 	};
+	//170119
+	/*abstract boolean eat(Animal feed);
+	abstract boolean eat(Plant feed);
+	abstract boolean attack(Animal enemy);*/
 	
-
+	//->에러가 나지 않음, 그러나 메인이 에러가 남, 추상메소드를 생성할 수 없음
+/*
 	boolean eat(Animal feed){
 		if(this.feed==1||this.feed==3){
 		//먹이인 동물의 무게->포만감
@@ -78,7 +83,7 @@ public class Animal {
 		}
 		return false;
 	};
-	
+	*/
 	void run(){
 		
 	};

@@ -1,6 +1,9 @@
 package com.test.quiz3;
 
-public class Monkey extends Animal{
+public class Monkey extends Animal implements Eatable, Attackable,GroundHabitable{
+
+	
+	
 	//자기 생성자 생성
 	public Monkey(int age){
 		//상위 생성자 호출 (Animal 생성자 불러오기)
@@ -13,7 +16,7 @@ public class Monkey extends Animal{
 	}
 	//오버라이딩
 	@Override
-	boolean eat(Animal feed){
+	public boolean eat(Animal feed){
 		//육식인지, 초식인지 비교할 수 없음
 		if(this.alive==true){
 			int satiety=feed.weight/5;
@@ -25,12 +28,12 @@ public class Monkey extends Animal{
 	}
 	
 	@Override
-	boolean eat(Plant feed){
+	public boolean eat(Plant feed){
 		return false;
 	}
 	
 	@Override
-	boolean attack(Animal enemy){
+	public boolean attack(Animal enemy){
 		if (this.alive==true && enemy.alive==true){
 			int defence=enemy.weight;
 			defence=defence/(enemy.age*100/enemy.life);
@@ -62,5 +65,8 @@ public class Monkey extends Animal{
 		}
 		return false;
 	}
-	
+	//170119
+	void smoking(){
+		System.out.println("뻐끔뻐끔");
+	}
 }
