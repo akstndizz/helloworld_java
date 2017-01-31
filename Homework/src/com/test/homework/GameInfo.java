@@ -5,7 +5,15 @@ public class GameInfo {
 	static int score[][]=new int[4][];
 	static String question[];
 	
-	public static void GameSet(){
+	private String username;
+	private int manchoice;
+
+	public void PersonInfo() {
+		username = "";
+		manchoice = 0;
+	}
+	
+	public void GameSet(){
 		score[0]=new int[]{20,15,10,5,20,15,5,10,15,20,10,5,20,15,5,10,15,10,20,5};
 		score[1]=new int[]{10,20,15,5,20,15,5,10,10,15,5,20,15,20,5,10,15,10,20,5};
 		score[2]=new int[]{5,15,10,20,20,15,5,10,20,10,5,10,15,20,10,5,15,5,20,10};
@@ -43,4 +51,9 @@ public class GameInfo {
 				+"1 ~ 4 중 선택하세요. >> "
 				};
 	}
+	public void setUsername(String username){this.username=username;}
+	public String getUsername(){return this.username;}
+	public void setManchoice(int manchoice){this.manchoice=manchoice;}
+	public int getManchoice(){return this.manchoice;}
+
 }
